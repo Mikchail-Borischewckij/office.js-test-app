@@ -10,17 +10,14 @@
 	Office.initialize = function (reason) {
 		$(document).ready(function () {
 			var docUrl = Office.context.document.url;
-			
-			if (docUrl) {
-				documentName = extractDocumentName(docUrl);
-				window.location = meetXUrl + "?docName=" + documentName;
-				if (documentName) {
-					var info = getDocumentInfo(documentName);
-					//var url = "https://ec.boardvantage.com/services/officelink/" +
-					//	info.token +
-					//	"/?action=officeAgendaLink&reqApp=wtask&folder=&locale=";
-					//window.location = url;
-				}
+			documentName = extractDocumentName(docUrl);
+			window.location = meetXUrl + "?docName=" + documentName;
+			if (docUrl && documentName) {
+				var info = getDocumentInfo(documentName);
+				//var url = "https://ec.boardvantage.com/services/officelink/" +
+				//	info.token +
+				//	"/?action=officeAgendaLink&reqApp=wtask&folder=&locale=";
+				//window.location = url;
 			}
 		});
 	};
