@@ -13,9 +13,9 @@
 			
 			if (docUrl) {
 				documentName = extractDocumentName(docUrl);
+				window.location = meetXUrl + "?docName=" + documentName;
 				if (documentName) {
 					var info = getDocumentInfo(documentName);
-					window.location = meetXUrl + "?docName=" + docUrl;
 					//var url = "https://ec.boardvantage.com/services/officelink/" +
 					//	info.token +
 					//	"/?action=officeAgendaLink&reqApp=wtask&folder=&locale=";
