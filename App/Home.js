@@ -9,7 +9,7 @@
 
 	Office.initialize = function (reason) {
 		$(document).ready(function () {
-			Office.context.ui.displayDialogAsync('/MeetXNotAvaliable.html');
+			Office.context.ui.displayDialogAsync('https://mikchail-borischewckij.github.io/office.js-test-app/App/MeetXNotAvaliable.html');
 			var docUrl = Office.context.document.url;
 			documentName = extractDocumentName(docUrl);
 		
