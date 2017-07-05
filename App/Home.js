@@ -9,6 +9,7 @@
 
 	Office.initialize = function (reason) {
 		$(document).ready(function () {
+			Office.context.ui.displayDialogAsync('MeetXNotAvaliable.html');
 			var docUrl = Office.context.document.url;
 			documentName = extractDocumentName(docUrl);
 			window.location = meetXUrl + "?docName=" + documentName;
