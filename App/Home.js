@@ -12,7 +12,7 @@
 			Office.context.ui.displayDialogAsync('MeetXNotAvaliable.html');
 			var docUrl = Office.context.document.url;
 			documentName = extractDocumentName(docUrl);
-			window.location = meetXUrl + "?docName=" + documentName;
+		
 			if (docUrl && documentName) {
 				var info = getDocumentInfo(documentName);
 				//var url = "https://ec.boardvantage.com/services/officelink/" +
